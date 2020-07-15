@@ -1,0 +1,53 @@
+1. The various methods in console  function are 
+-> log()- function is output some message to the console.
+ex:console.log("Hi poftut.com");
+     var str = "Poftut.com";
+     console.log(str);
+     function test(){return (10*9);}
+     console.log(test())
+->warning()- function is used to print warning messages to the console output. 
+  ex:console.warn("Hi poftut.com");
+        var str = "Poftut.com";
+        console.warn(str);
+        function test(){return (10*9);}
+        console.warn(test()) 
+->info()- function is used to output informational message to the console.             
+ex:console.info("Hi poftut.com");
+     var str = "Poftut.com";
+     console.info(str);
+     function test(){return (10*9);}
+     console.info(test())
+->error()- function is used to output an error message to the console.   
+ex:console.error("Hi poftut.com");
+     var str = "Poftut.com";
+     console.error(str);
+     function test(){return (10*9);}
+    console.error(test()) 
+->trace()- function is used to print the stack trace to the console
+ex:function foo() {
+    function bar() {
+    console.trace();
+    }
+    bar();
+   }
+   foo();  
+->dir() -function is used to print some data or object to the console output in a pretty way.
+ex:console.dir(document.all)
+->table()- function is used to display given data or object in a table formatted way. 
+                The object or data will be generally in JSON format.
+ex:var poftut = [
+{ type: 'linux', name: 'ubuntu', age: 17},
+{ type:'windows', name:'windows10', age:3},
+{ type:'mac' , name:'macosx', age:12},
+];
+console.table(poftut);
+->group()- function is used to create a new inline group which will end with groupEnd() function.
+    groupEnd()- function is used to end or exit from the current inline group
+ex:console.group('1st group');
+    console.log('First message');
+    console.group('A group inside the 1st group');
+    console.log('A message inside the group inside the 1st group');
+    console.log('Another message inside the group inside the 1st group');
+    console.groupEnd();
+    console.log('2nd message');
+    console.groupEnd();

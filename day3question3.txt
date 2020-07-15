@@ -1,0 +1,93 @@
+3.Data Types in java script
+->JavaScript String
+String is used to store text. In JavaScript, strings are surrounded by quotes:
+Single quotes: 'Hello'
+Double quotes: "Hello"
+Backticks: `Hello`
+ex://strings example
+let name = 'ram';
+let name1 = "hari";
+let result = `The names are ${name} and ${name1}`;
+
+->JavaScript Number
+Number represents integer and floating numbers (decimals and exponentials). 
+A number type can also be +Infinity, -Infinity, and NaN (not a number).
+ex:let number1 = 3;
+   let number2 = 3.433;
+   let number3 = 3e5 // 3 * 10^5
+
+ex:let number1 = 3/0;
+     console.log(count); // returns Infinity
+    let number2 = -3/0;
+    console.log(count1); // returns -Infinity
+   // strings can't be divided by numbers
+   let number3 = "abc"/3; 
+   console.log(number3);  // returns NaN
+
+->JavaScript BigInt
+In JavaScript, Number type can only represent numbers less than (253 - 1) and more than -(253 - 1). 
+However, if you need to use a larger number than that, you can use the BigInt data type.
+A BigInt number is created by appending n to the end of an integer.
+ex:// BigInt value
+     let value = 900719925124740998n;
+     // Adding two big integers
+    let value1 = value + 1n;
+   console.log(value1); // returns "900719925124740999n"
+   let value = 900719925124740998n;
+  // Error! BitInt and number cannot be added
+  let value1 = value + 1; 
+  console.log(value1);
+
+->JavaScript Boolean
+This data type represents the logical entity. Boolean represents one of two values: true or false. 
+It is easier to think of it as a yes/no switch. 
+ex:let dataChecked = true;
+   let valueCounted = false;
+
+->JavaScript undefined
+The undefined data type represents value is not assigned. 
+If a variable is declared but the value is not assigned, then the value of that variable will be undefined. 
+ex:let name;
+    console.log(name); // returns undefined 
+
+->JavaScript null
+In JavaScript, null is a special value that represents empty or unknown value.
+ex:let number = null;
+
+->JavaScript Symbol
+This data type was introduced in a newer version of JavaScript (from ES2015).
+A value having the data type Symbol can be referred to as a symbol value. 
+Symbol is an immutable primitive value that is unique. 
+ex:// two symbols with the same description
+     let value1 = Symbol('hello');
+    let value2 = Symbol('hello');
+
+->JavaScript Object
+An object is a complex data type that allows us to store collections of data. For example,
+ex:let student = {
+   firstName: 'ram',
+   lastName: null,
+  class: 10
+  };
+
+->JavaScript Type
+JavaScript is a dynamically typed (loosely typed) language. JavaScript automatically determines the variables' data type for you.
+It also means that a variable can be of one data type and later it can be changed to another data type. For example,
+ex:// data is of undefined type
+    let data;
+   // data is of integer type
+   data = 5;
+   // data is of string type
+  data = "JavaScript Programming";
+
+->JavaScript typeof
+To find the type of a variable, you can use the typeof operator. For example,
+ex:let name = 'ram';
+    typeof(name); // returns "string"
+    let number = 4;
+    typeof(number); //returns "number"
+   let valueChecked = true;
+   typeof(valueChecked); //returns "boolean"
+   let a = null;
+
+typeof(a); // returns "object"
