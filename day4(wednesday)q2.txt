@@ -1,0 +1,100 @@
+2. The array methods are
+->Array.push() : 
+Adding Element at the end of an Array. As array in JavaScript are mutable object, we can easily add or remove elements from the Array.
+And it dynamically changes as we modify the elements from the array.
+ex: var number_arr = [ 10, 20, 30, 40, 50 ]; 
+var string_arr = [ "piyush", "gourav", "smruti", "ritu" ]; 
+number_arr.push(60); 
+number_arr.push(70, 80, 90); 
+string_arr.push("sumit", "amit"); 
+console.log("After push op " + number_arr); 
+console.log("After push op " + string_arr); 
+
+->Array.unshift() : Adding elements at the front of an Array
+ex:var number_arr = [ 20, 30, 40 ]; 
+var string_arr = [ "amit", "sumit" ]; 
+number_arr.unshift(10, 20); 
+string_arr.unshift("sunil", "anil"); 
+console.log("After unshift op " + number_arr); 
+console.log("After unshift op " + string_arr); 
+
+->Array.pop() : Removing elements from the end of an array
+ex:var number_arr = [ 20, 30, 40, 50 ]; 
+var string_arr = [ "amit", "sumit", "anil" ]; 
+number_arr.pop(); 
+string_arr.pop(); 
+console.log("After pop op " + number_arr); 
+console.log("After popo op " + string_arr); 
+
+->Array.shift() : Removing elements at the beginning of an array
+ex:var number_arr = [ 20, 30, 40, 50, 60 ]; 
+var string_arr = [ "amit", "sumit", "anil", "prateek" ]; 
+number_arr.shift(); 
+string_arr.shift(); 
+console.log("After shift op " + number_arr); 
+console.log("After shift op " + string_arr); 
+
+->Array.splice() : Insertion and Removal in between an Array
+ex:var number_arr = [ 20, 30, 40, 50, 60 ]; 
+var string_arr = [ "amit", "sumit", "anil", "prateek" ]; 
+number_arr.splice(1, 3); 
+number_arr.splice(1, 0, 3, 4, 5); 
+string_arr.splice(1, 2, "xyz", "geek 1", "geek 2"); 
+console.log("After splice op " + number_arr); 
+console.log("After splice op " + string_arr); 
+
+The string functions are
+->String Length
+The length property returns the length of a string:
+ex:var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+
+->Finding a String in a String
+The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:
+ex:var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+
+->The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+ex:var str = "Please locate where 'locate' occurs!";
+var pos = str.lastIndexOf("locate");
+
+->The slice() Method
+slice() extracts a part of a string and returns the extracted part in a new string.
+The method takes 2 parameters: the start position, and the end position (end not included).
+ex:var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
+
+->The substring() Method
+substring() is similar to slice().
+The difference is that substring() cannot accept negative indexes.
+ex:var str = "Apple, Banana, Kiwi";
+var res = str.substring(7, 13);
+
+->The substr() Method
+substr() is similar to slice().
+The difference is that the second parameter specifies the length of the extracted part.
+ex:var str = "Apple, Banana, Kiwi";
+var res = str.substr(7, 6);
+
+->Replacing String Content
+The replace() method replaces a specified value with another value in a string:
+ex:str = "Please visit Microsoft!";
+var n = str.replace("Microsoft", "W3Schools");
+
+->Converting to Upper and Lower Case
+A string is converted to upper case with toUpperCase()
+ex:var text1 = "Hello World!";       // String
+var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+ex:var text1 = "Hello World!";       // String
+var text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+
+->The concat() Method
+concat() joins two or more strings:
+ex:var text1 = "Hello";
+var text2 = "World";
+var text3 = text1.concat(" ", text2);
+
+->String.trim()
+The trim() method removes whitespace from both sides of a string:
+ex:var str = "       Hello World!        ";
+alert(str.trim());
