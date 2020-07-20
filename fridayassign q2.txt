@@ -1,0 +1,15 @@
+const student={
+      name: "helsinki" ,
+      age:24,
+      projects:{
+                 dicegame:" two players dice game using javascript" 
+}
+} 
+
+destructuring the object
+console.log(student.name);
+console.log(student.project.dicegame);
+
+const{age , projrct:{dicegame}}=student;
+console.log(age,dicegame);
+ 
